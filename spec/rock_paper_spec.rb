@@ -12,5 +12,9 @@ describe('RPS#p1_wins?') do
     game = RPS.new()
     expect(game.p1_wins?("scissors", "rock")).to(eq(false))
   end
-end
 
+  it("returns true if player one plays paper and player two plays rock") do
+    game = RPS.new()
+    expect(game.p1_wins?("paper", "rock")).to(eq(true))
+  end
+end
