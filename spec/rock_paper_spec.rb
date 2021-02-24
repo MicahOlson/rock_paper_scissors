@@ -22,4 +22,9 @@ describe('RPS#p1_wins?') do
     game = RPS.new()
     expect(game.p1_wins?("scissors", "paper")).to(eq(true))
   end
+  
+  it("returns 'tie' if player one and player two play the same thing") do
+    game = RPS.new()
+    expect(game.p1_wins?("scissors", "scissors")).to(eq("tie"))
+  end 
 end
