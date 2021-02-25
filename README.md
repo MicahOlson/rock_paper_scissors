@@ -1,56 +1,59 @@
+# _Rock Paper Scissors_
+
+### _This project was created solely for the education of the author(s) and is not in a complete or portfolio-ready state. It should not be considered representative of professional work._
+\
+[Epicodus](https://www.epicodus.com/) - [Ruby and Rails](https://www.learnhowtoprogram.com/ruby-and-rails/test-driven-development-with-ruby) - [Week 1, Lesson 13](https://www.learnhowtoprogram.com/ruby-and-rails/test-driven-development-with-ruby/rock-paper-scissors-find-and-replace-palindromes)
+\
+Date created: 2021-02-24
+
+#### By _**Mekinsie Callahan, Kody Gordon, Micah Olson**_
+
+## Technologies Used
+* Ruby
+* Docker
+* Gem Bundler
+
 ## Description
+The goal of this exercise is to practice Ruby, TDD and building classes. This program allows a user to play rock paper scissors against the computer. Whoever reaches 5 points first wins. 
 
-This template repository includes a basic setup for using Docker to run RSpec tests, Pry, and Ruby scripts using Ruby 2.6.5. 
+## Setup & Installation Requirements
+**System Requirements:** Ruby is required to run this program. Download/installation instructions <a href="https://www.learnhowtoprogram.com/ruby-and-rails/getting-started-with-ruby/installing-ruby" target="_blank">here</a>
 
-To use Docker, you will first need to [install](https://docs.docker.com/get-docker/) it. Once it's installed, Docker should be open so you can actually run Docker commands in the terminal.
+1.  To play this game, start by cloning the repo to your desktop with the following command:
+ ``` bash
+ $ git clone https://github.com/MicahOlson/rock_paper_scissors.git
+ ```
+2. Navigate to project root directory:
+  ``` bash
+  $ cd rock_paper_scissors
+  ```
 
-## Running IRB
+3. Run the program in your terminal:
+  ``` bash
+  $ ruby main.rb
+  ```
+The game has now been opened in your terminal. Continue to follow in-game instructions to play. Enjoy!
 
-You don't need this setup for running IRB (Ruby REPL) by itself. To use IRB on its own, do the following (after Docker is installed and open):
-
+## Running Logic Tests
+This project was created using **test-driven development** (TDD). 
+To run tests on this project, first download the required gems provided the included Gemfile: 
+``` bash
+$ bundle install 
 ```
-$ docker pull ruby:2.6.5
-```
-
-This pulls down the image of Ruby we use at Epicodus. You only need to do this once.
-
-Once you have it on your machine, you can run IRB with the following command:
-
-```
-$ docker run -it ruby:2.6.5 irb
-```
-
-We recommend creating an alias (called something like `dirb` for Docker IRB) to make the command easier to use.
-
-You can exit IRB as normal by typing `exit`.
-
-## Using This Repository for Docker
-
-This repository is a template repository. To use it, start by creating a new repository with `ruby-rspec-docker-container` as a template. Clone that repository down to your desktop.
-
-The repository contains a simple project that tests a simple `title_case` method. To run tests on the current code, simply run the command `docker-compose up` in the root directory of this project.
-
-To run tests on your own code, replace the `lib` and `spec` directories with your own source code (for `lib`) and tests (for `spec`).
-
-We recommend creating an alias for the following commands. The alias should look something like this:
-
-```
-dspec ()
-{
-  docker-compose down
-  docker-compose up --build
-  docker-compose run --rm app
-}
+You may now run RSpec by typing it into your terminal:
+``` bash
+$ rspec
 ```
 
-With this alias, the `dspec` command will automatically run RSpec tests. You can use `binding.pry` as needed.
+## Known Bugs
 
-### Running Scripts
+* No known bugs
 
-Running scripts is optional at Epicodus. However, if you want to experiment with it, follow these steps:
+## License
+[GPLv3](https://choosealicense.com/licenses/gpl-3.0/)\
+Copyright &copy; 2021 Mekinsie Callahan, Kody Gordon, Micah L. Olson
 
-* The script must be located in `lib` and be called `script.rb`.
-
-* Run the following command: `docker-compose run --rm app ruby lib/script.rb`.
-
-Once again, we recommend aliasing this command if you plan to run scripts often. If you prefer to name your script something else, you just need to update the command to use the correct path and file name.
+## Contact
+<li>Reach Mekinsie Callahan: via <a href="https://www.linkedin.com/in/mekinsie/" target="_blank">Linkedin</a> or <a href="mailto:mekinsie.aja@gmail.com" target="_blank">email</a></li>
+<li>Reach Kody Gordon: via <a href="https://www.linkedin.com/in/kodygordon/" target="_blank">Linkedin</a> or <a href="mailto:gordon.km89@gmail.com" target="_blank">email</a></li>
+<li>Reach Micah Olson: via <a href="https://www.linkedin.com/in/micah-lewis-olson/" target="_blank">Linkedin</a> or <a href="mailto:micah.olson@protonmail.com" target="_blank">email</a></li>
